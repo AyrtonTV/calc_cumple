@@ -29,6 +29,7 @@ function calculate() {
         p.innerText = "¡Feliz Cumpleaños!";
         p.style.textAlign = "center";
         p.style.marginTop = "20px";
+        p.style.color = "white";
 
         // Agregar la imagen y el párrafo al cuerpo de la página
         body.appendChild(img);
