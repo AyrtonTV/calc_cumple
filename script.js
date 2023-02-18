@@ -16,6 +16,7 @@ function calculate() {
 
     // Comprobar si el usuario ingresó "180264"
     if (input.value === "180259") {
+        body.style.backgroundColor = "#F6D4BA";
         // Ocultar la calculadora
         document.querySelector(".calculator").style.display = "none";
 
@@ -24,15 +25,26 @@ function calculate() {
         img.src = "img/SAM_0133.JPG";
         img.style.display = "block";
         img.style.margin = "0 auto";
+        img.style.borderRadius = "10px"
+        img.style.boxShadow = "1px 1px 5px #0C120C"
         img.style.width = "50%";
+        const h2 = document.createElement("h2");
+        h2.innerText = "¡Feliz Cumpleaños, Má!";
+        h2.style.textAlign = "center";
+        h2.style.marginTop = "20px";
+        h2.style.color = "#FF8CC6";
+        h2.style.textShadow = "1px 1px 1px #0C120C";
         const p = document.createElement("p");
-        p.innerText = "¡Feliz Cumpleaños!";
+        p.innerText = "Espero que te lo pases muy bien en tu día, que disfrutes la comida si te llevan a comer, que disfrutes los regalos que te den y disfruta este pequeño easter egg dentro de una de mis prácticas de programación. (No te preocupes, no es visible sin meter la clave xD) ";
         p.style.textAlign = "center";
-        p.style.marginTop = "20px";
-        p.style.color = "white";
+        p.style.margin = "20px 100px 0";
+        p.style.color = "#FF8CC6";
+        p.style.fontSize = "18px"
+        p.style.textShadow = "1px 1px 1px #0C120C";
 
         // Agregar la imagen y el párrafo al cuerpo de la página
         body.appendChild(img);
+        body.appendChild(h2);
         body.appendChild(p);
 
         // Reproducir música de fondo
