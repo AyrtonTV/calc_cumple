@@ -72,6 +72,7 @@ function calculate() {
         video.appendChild(source);
 
         const audio = new Audio("audio/fall.mp3");
+        audio.loop = true;
         audio.play();
     }
 }
