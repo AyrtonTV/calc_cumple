@@ -51,6 +51,25 @@ function calculate() {
         const audio = new Audio("audio/mananitas.mp3");
         audio.play();
     }
+    else if(input.value === "221092"){
+        body.style.backgroundColor = "#F6D4BA";
+        document.querySelector(".calculator").style.display = "none";
+
+        const video = document.createElement("video");
+        // video.src = "vids/maru.mp4";
+        video.controls = false;
+        video.autoplay = true;
+        video.muted = false;
+        video.style.margin = "100px auto 0";
+        video.style.display = "block";
+        video.style.width = "30%";
+        const source = document.createElement("source");
+        source.src = "vids/maru.mp4";
+        source.type = "video/mp4";
+
+        body.appendChild(video);
+        video.appendChild(source);
+    }
 }
 
 // Agregar un evento click a cada botón
