@@ -60,6 +60,7 @@ function calculate() {
         video.controls = false;
         video.autoplay = true;
         video.muted = false;
+        video.loop = true;
         video.style.margin = "100px auto 0";
         video.style.display = "block";
         video.style.width = "30%";
