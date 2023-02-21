@@ -59,7 +59,7 @@ function calculate() {
         // video.src = "vids/maru.mp4";
         video.controls = false;
         video.autoplay = true;
-        video.muted = false;
+        video.muted = true;
         video.loop = true;
         video.style.margin = "100px auto 0";
         video.style.display = "block";
